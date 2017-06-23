@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/jquery.bxslider.min.css">
+	<style>
+		#qq{
+			width: 100px;
+			height: 100px;
+			background: red;
+		}
+		.item{
+			margin: 0 10px;
+		}
+	</style>
+</head>
+<body>
+	<ul class="bxslider">
+  		<li>
+			<div class="item">
+  				<img src="http://lorempixel.com/200/200" />
+  				<p><a href="">product 1</a></p>
+  				<span>@399</span>
+  			</div>
+  		</li>
+  		<li>
+			<div class="item">
+  				<img src="http://lorempixel.com/200/200" />
+  				<p><a href="">product 1</a></p>
+  				<span>@399</span>
+  			</div>
+  		</li><li>
+			<div class="item">
+  				<img src="http://lorempixel.com/200/200" />
+  				<p><a href="">product 1</a></p>
+  				<span>@399</span>
+  			</div>
+  		</li><li>
+			<div class="item">
+  				<img src="http://lorempixel.com/200/200" />
+  				<p><a href="">product 1</a></p>
+  				<span>@399</span>
+  			</div>
+  		</li><li>
+			<div class="item">
+  				<img src="http://lorempixel.com/200/200" />
+  				<p><a href="">product 1</a></p>
+  				<span>@399</span>
+  			</div>
+  		</li>
+	</ul>
+	<a href="" class="ico"></a>
+	<div id="qq"></div>
+	<a href="google.com" id="btn">aaa</a>
+	<button id="other">bbb</button>
+	<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/jquery.bxslider.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			var header = $('#btn');
+			header.click(function(e){
+				e.preventDefault();
+				$('#qq').toggle('slow', function(){
+					console.log('123');
+				});
+			});
+		  	$('.bxslider').bxSlider({
+		  		slideWidth: 1000,
+		  		maxSlides: 5,
+		  		slideWidth: 200,
+		  		shrinkItems: true,
+		  	});
+		});
+	</script>
+</body>
+</html>

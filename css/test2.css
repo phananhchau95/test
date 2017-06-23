@@ -1,0 +1,12 @@
+#header ul {
+  list-style: none; }
+#header li {
+  display: inline-block; }
+#header a {
+  padding: 20px 10px; }
+#header p {
+  max-height: 20px; }
+#header h1 {
+  color: red; }
+
+/*# sourceMappingURL=test2.css.map */
